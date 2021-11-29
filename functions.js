@@ -14,7 +14,7 @@ function SumZero(array, target) {
 let numar = [1, 2, 3, -2];
 console.log(SumZero(numar, 0));
 
-// This function Time is O(n^2) ==================================
+// This function Time is O(n^2) and space is O(n) ==================================
 function hasUniqueChars(str) {
   for (let i = 0; i < str.length; i++) {
     for (let j = i + 1; j < str.length; j++) {
@@ -28,7 +28,7 @@ function hasUniqueChars(str) {
 
 console.log(hasUniqueChars("monday"));
 
-// This function Time is O(n) ======================
+// This function Time is O(n) and Space is O(n)======================
 function isPangram(str) {
   let alphabet = "abcdefghijklmnopqrstuvwxyz";
   let regex = /\s/g;
@@ -45,7 +45,7 @@ function isPangram(str) {
 
 console.log(isPangram("The quick brown fox jumps over the lazy dog!"));
 
-// This function Time is O(n)
+// This function Time is O(n) and Space is O(n)  ==========================
 function findLongestWord(arr) {
   var max = arr[0].length;
   arr.map((v) => (max = Math.max(max, v.length)));
